@@ -34,6 +34,22 @@ ages << 0
 #5
 puts "#{fav_movies.keys[2]} is from the year of #{fav_movies["Prometheus"]}."
 
+#Exercise 2
+#1
+puts fav_colours[-1]
+#2
+cities_population[:beijing] = 21500000
+#3
+coin_flips.reverse!
+#4
+puts "Population of #{cities_population.key(853800)} is #{cities_population[:new_york]}"
+#5
+fav_artists.each do |name|
+  puts "I think #{name} is a great artist."
+end
+
+
+
 
 
 
