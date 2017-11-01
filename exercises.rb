@@ -2,7 +2,7 @@
 #Arrays
 fav_colours = ["yellow", "grey", "babyblue", "lilac", "pink"]
 ages = ["30", "27", "25", "28", "42"]
-heads = [true, true, false, true, false]
+coin_flips = [true, true, false, true, false]
 fav_artists = ["Leonardo Da Vinci", "Salvador Dali", "Joan Miro"]
 fav_colours2 = [:yellow, :grey, :babyblue, :lilac, :pink]
 
@@ -21,3 +21,35 @@ fav_movies = {
 cities_population = { toronto: 2809000, new_york: 8538000, tokyo: 9273000
 }
 friends = {"Edward" => 29, "Kevin" => 27, "Brook" => 25, "Meng" => 25, "Richard" => 37}
+
+#Exercise 1
+#1
+puts coin_flips.join(", ")
+#2
+puts fav_colours[0]
+#3
+puts ages.sort.join(", ")
+#4
+ages << 0
+#5
+puts "#{fav_movies.keys[2]} is from the year of #{fav_movies["Prometheus"]}."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
