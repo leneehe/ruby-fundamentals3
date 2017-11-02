@@ -88,14 +88,68 @@ end
 #3
 puts fav_colours.last(2).join(", ")
 #4
-puts ages.collect!{ |a| a += 1 }
+puts ages.collect!{ |a| a += 1 }.join(", ")
 #5
 fav_colours.push("white", "black")
 
+#Exercise 6 a
+#1
+movies = {
+  "The Matrix" => 1999,
+  "Star Wars: Episode 1" => 1999,
+  "The Mummy" => 1999,
+  "Avatar" => 2009,
+  "Star Trek" => 2009,
+  "Distric 9" => 2009,
+  "How to Train Your Dragon 3" => 2019,
+  "Toy Story 4" => 2019,
+  "Star Wars: Episode 9" => 2019
+}
+#2
+phone_buttons = Array.new(4)
+phone_buttons[0] = %w[1 2 3]
+phone_buttons[1] = %w[4 5 6]
+phone_buttons[2] = %w[7 8 9]
+phone_buttons[3] = %w[* 0 #]
+p phone_buttons
+#3
+country1 = {:name => "Great Britain", :continent => "Europe", :island => false}
+country2 = {:name => "Singapore", :continent => "Asia", :island => true}
+country3 = {:name => "Jamaica", :continent => "North America", :island => true}
+countries = [country1, country2, country3]
 
+#Exercise 6 b
+#1
+puts "I will not skateboard in the halls" * 20
+#2
+puts Array.new(20, "I will not skateboard in the halls")
+#3
+one_to_fifty = []
+Array.new(50).each_index {|n| one_to_fifty << (n + 1)}
+puts one_to_fifty.join(", ")
+#4
+sum = 0
+one_to_fifty.each {|a| sum += a }
+puts sum
+#5
+big_array = []
+Array.new(50).each_index { |a|
+  Array.new(3).each_index { |b|
+   big_array << (a + 1)
+  }
+ }
 
+ p big_array
+#6
+not_islands = []
 
-
+countries.each { |country|
+  if country[:island] == false
+    not_islands << country
+  end
+}
+p countries
+p not_islands
 
 
 
