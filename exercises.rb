@@ -72,6 +72,27 @@ fav_artists.delete "Joan Miro"
 #5
 cities_population[:toronto] = 2902000
 
+#Exercise  5
+#1
+puts cities_population.values.sum
+#2
+friends.each do |n, a|
+  if a < 28
+    puts "#{n} is a youngester."
+  elsif a > 28 && a < 36
+    puts "#{n} is a mature person."
+  elsif a > 35
+    puts "#{n} is about to hit 40!"
+  end
+end
+#3
+puts fav_colours.last(2).join(", ")
+#4
+puts ages.collect!{ |a| a += 1 }
+#5
+fav_colours.push("white", "black")
+
+
 
 
 
