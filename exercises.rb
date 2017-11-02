@@ -151,6 +151,21 @@ countries.each { |country|
 p countries
 p not_islands
 
+#Exercise 7
+expenses = [790.45, 56.55, 59, 200, 62.3]
+expenses2 = [77.89, 9455.01, 101.32, 67, 13.66]
+def expense_sum(spending)
+  total_spending = 0
+  spending.each {|s| total_spending += s }
+  puts total_spending
+end
+
+expense_sum(expenses)
+expense_sum(expenses2)
+
+#Exercise 8
+
+
 
 
 
