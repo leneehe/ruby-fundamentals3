@@ -2,7 +2,6 @@
 puts "How many pizzas do you want to order?"
 pizza_numbers = gets.to_i
 
-pizzas = []
 pizzas = Array.new(pizza_numbers)
 
 def topping_order(pizza)
