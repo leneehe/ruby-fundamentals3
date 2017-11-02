@@ -164,6 +164,30 @@ expense_sum(expenses)
 expense_sum(expenses2)
 
 #Exercise 8
+grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+#1
+grocery_list.push "rice"
+def my_list(groceries)
+  groceries.each { |item| puts "* " + item}
+end
+my_list(grocery_list)
+#2
+puts grocery_list.count
+#3
+if grocery_list.include?("bananas")
+  puts "You need to get bananas for them monkeys."
+else
+  puts "No need to get bananas for monkeys today!"
+end
+#4
+puts grocery_list[1]
+#5
+my_list(grocery_list.sort!)
+#6
+puts "--REVISED GROCERY LIST--"
+grocery_list.delete("salmon")
+my_list(grocery_list)
+
 
 
 
