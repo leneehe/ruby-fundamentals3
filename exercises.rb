@@ -1,7 +1,7 @@
 #Exercise 0
 #Arrays
 fav_colours = ["yellow", "grey", "babyblue", "lilac", "pink"]
-ages = ["30", "27", "25", "28", "42"]
+ages = [30, 27, 25, 28, 42]
 coin_flips = [true, true, false, true, false]
 fav_artists = ["Leonardo Da Vinci", "Salvador Dali", "Joan Miro"]
 fav_colours2 = [:yellow, :grey, :babyblue, :lilac, :pink]
@@ -48,6 +48,17 @@ fav_artists.each do |name|
   puts "I think #{name} is a great artist."
 end
 
+#Exercise 3
+#1
+puts fav_artists[0..1]
+#2
+fav_movies.each { |name, year| puts "#{name} come out in #{year}."}
+#3
+ages.sort!.reverse!
+puts ages.join(", ")
+#4
+fav_movies["Beauty and the Beast"] = [1991, 2017]
+puts "#{fav_movies.keys[-1]} #{fav_movies.values[-1]}"
 
 
 
