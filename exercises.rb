@@ -60,6 +60,18 @@ puts ages.join(", ")
 fav_movies["Beauty and the Beast"] = [1991, 2017]
 puts "#{fav_movies.keys[-1]} #{fav_movies.values[-1]}"
 
+#Exercise 4
+#1
+puts ages.each.select {|a| a < 30}.join(", ")
+#2
+puts ages.max
+#3
+puts coin_flips.count
+#4
+fav_artists.delete "Joan Miro"
+#5
+cities_population[:toronto] = 2902000
+
 
 
 
